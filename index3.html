@@ -1,0 +1,1814 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Public Service Commission, West Bengal</title>
+
+<meta name="description"
+content="Public Service Commission, West Bengal - Recruitment, examinations, notifications, syllabus, admit cards and candidate services.">
+
+<style>
+/* =========================================================
+   WBPSC MOBILE FRIENDLY SINGLE FILE
+   ========================================================= */
+
+:root{
+    --primary:#123c69;
+    --primary-dark:#092b4b;
+    --secondary:#e9b949;
+    --light:#f4f7fa;
+    --white:#ffffff;
+    --text:#222;
+    --muted:#666;
+    --border:#dfe5eb;
+    --danger:#b42318;
+    --success:#087443;
+    --shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:var(--text);
+    line-height:1.55;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input{
+    font:inherit;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.top-bar{
+    background:#092b4b;
+    color:white;
+    font-size:13px;
+}
+
+.top-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:7px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+.top-links{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.top-links a:hover{
+    text-decoration:underline;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header{
+    background:white;
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 18px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    border:2px solid #b89b52;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fffdf5;
+    color:#123c69;
+    font-weight:bold;
+    font-size:11px;
+    text-align:center;
+    flex-shrink:0;
+}
+
+.title-area h1{
+    color:#123c69;
+    font-size:24px;
+    margin-bottom:3px;
+}
+
+.title-area p{
+    color:#555;
+    font-size:14px;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navbar{
+    background:var(--primary);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.nav-inner{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+
+.nav-links{
+    display:flex;
+    width:100%;
+}
+
+.nav-links a{
+    padding:13px 15px;
+    font-size:14px;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    background:#0a3154;
+}
+
+.menu-btn{
+    display:none;
+    margin-left:auto;
+    background:none;
+    color:white;
+    border:0;
+    font-size:27px;
+    cursor:pointer;
+}
+
+/* =========================================================
+   NOTICE BAR
+   ========================================================= */
+
+.notice-bar{
+    background:#fff4d6;
+    border-bottom:1px solid #ead28f;
+}
+
+.notice-inner{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    min-height:44px;
+}
+
+.notice-label{
+    background:#b42318;
+    color:white;
+    font-weight:bold;
+    padding:11px 15px;
+    white-space:nowrap;
+}
+
+.notice-text{
+    overflow:hidden;
+    flex:1;
+    padding:0 12px;
+}
+
+.notice-text span{
+    display:inline-block;
+    white-space:nowrap;
+    animation:scrollText 25s linear infinite;
+}
+
+@keyframes scrollText{
+    from{transform:translateX(100%);}
+    to{transform:translateX(-100%);}
+}
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container{
+    width:min(1200px,94%);
+    margin:auto;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+    margin:22px 0;
+}
+
+.hero-card{
+    min-height:260px;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+    background:
+        linear-gradient(120deg,rgba(9,43,75,.96),rgba(18,60,105,.72)),
+        linear-gradient(135deg,#123c69,#d7e5f2);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:45px;
+    box-shadow:var(--shadow);
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero-content small{
+    color:#ffe6a1;
+    font-weight:bold;
+}
+
+.hero-content h2{
+    font-size:34px;
+    margin:8px 0 12px;
+}
+
+.hero-content p{
+    font-size:16px;
+    opacity:.95;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:22px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 17px;
+    border-radius:6px;
+    font-weight:bold;
+    font-size:14px;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:var(--secondary);
+    color:#222;
+}
+
+.btn-light{
+    background:white;
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.section{
+    margin:25px 0;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    margin-bottom:13px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:22px;
+    border-left:5px solid var(--secondary);
+    padding-left:10px;
+}
+
+.view-all{
+    color:var(--primary);
+    font-weight:bold;
+    font-size:13px;
+}
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:10px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.card-header{
+    background:var(--primary);
+    color:white;
+    padding:12px 15px;
+    font-weight:bold;
+}
+
+.card-body{
+    padding:15px;
+}
+
+/* =========================================================
+   LATEST NEWS
+   ========================================================= */
+
+.news-list{
+    list-style:none;
+}
+
+.news-list li{
+    padding:11px 0;
+    border-bottom:1px solid #eee;
+}
+
+.news-list li:last-child{
+    border-bottom:0;
+}
+
+.news-list a{
+    color:#173f68;
+    font-size:14px;
+}
+
+.news-list a:hover{
+    color:#b42318;
+}
+
+.new{
+    background:#b42318;
+    color:white;
+    font-size:10px;
+    padding:2px 5px;
+    border-radius:3px;
+    margin-left:4px;
+}
+
+/* =========================================================
+   CANDIDATE CORNER
+   ========================================================= */
+
+.candidate-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:13px;
+}
+
+.service{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:9px;
+    padding:18px 12px;
+    text-align:center;
+    min-height:125px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:.2s;
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+
+.service:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+    border-color:#9db6cc;
+}
+
+.service-icon{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#eaf2f8;
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.service strong{
+    color:#173f68;
+    font-size:13px;
+}
+
+/* =========================================================
+   QUICK LINKS
+   ========================================================= */
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.quick{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:15px 10px;
+    text-align:center;
+    color:var(--primary);
+    font-weight:bold;
+    font-size:13px;
+    transition:.2s;
+}
+
+.quick:hover{
+    background:var(--primary);
+    color:white;
+}
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.search-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+    flex:1;
+    border:1px solid #ccd5de;
+    padding:12px;
+    border-radius:6px;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:var(--primary);
+}
+
+.search-box button{
+    border:0;
+    background:var(--primary);
+    color:white;
+    padding:0 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* =========================================================
+   IMPORTANT LINKS
+   ========================================================= */
+
+.important{
+    background:#fff;
+    border-left:5px solid var(--secondary);
+    padding:17px;
+    box-shadow:var(--shadow);
+    border-radius:7px;
+}
+
+.important a{
+    color:var(--primary);
+    font-weight:bold;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer{
+    margin-top:40px;
+    background:#092b4b;
+    color:#e8eef4;
+}
+
+.footer-main{
+    max-width:1200px;
+    margin:auto;
+    padding:35px 18px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+.footer h3{
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.footer p{
+    font-size:13px;
+    color:#cbd8e4;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer li{
+    margin:7px 0;
+    font-size:13px;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    padding:14px;
+    font-size:12px;
+    color:#cbd8e4;
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+#topBtn{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:42px;
+    height:42px;
+    border:0;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:850px){
+
+    .top-inner{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .top-inner > span{
+        display:none;
+    }
+
+    .header-inner{
+        padding:12px;
+    }
+
+    .logo{
+        width:58px;
+        height:58px;
+        font-size:9px;
+    }
+
+    .title-area h1{
+        font-size:18px;
+    }
+
+    .title-area p{
+        font-size:11px;
+    }
+
+    .nav-inner{
+        padding:0 12px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        border-top:1px solid rgba(255,255,255,.1);
+        padding:12px;
+    }
+
+    .notice-label{
+        font-size:12px;
+        padding:10px;
+    }
+
+    .hero-card{
+        min-height:300px;
+        padding:28px 22px;
+    }
+
+    .hero-content h2{
+        font-size:26px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .candidate-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .top-links{
+        gap:8px;
+        justify-content:center;
+    }
+
+    .top-links a{
+        font-size:11px;
+    }
+
+    .header-inner{
+        gap:9px;
+    }
+
+    .title-area h1{
+        font-size:15px;
+    }
+
+    .title-area p{
+        font-size:10px;
+    }
+
+    .hero{
+        margin:14px 0;
+    }
+
+    .hero-card{
+        min-height:310px;
+        padding:24px 18px;
+    }
+
+    .hero-content h2{
+        font-size:23px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .section-title h2{
+        font-size:19px;
+    }
+
+    .candidate-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:9px;
+    }
+
+    .service{
+        min-height:115px;
+        padding:12px 6px;
+    }
+
+    .service strong{
+        font-size:11px;
+    }
+
+    .quick-grid{
+        gap:8px;
+    }
+
+    .quick{
+        font-size:11px;
+        padding:13px 5px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box button{
+        padding:11px;
+    }
+
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible{
+    outline:3px solid #f0b429;
+    outline-offset:2px;
+}
+
+@media(prefers-reduced-motion:reduce){
+    *{
+        scroll-behavior:auto !important;
+        animation:none !important;
+        transition:none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ======================================================
+     TOP BAR
+     ====================================================== -->
+
+<div class="top-bar">
+    <div class="top-inner">
+
+        <span>
+            Government of West Bengal
+        </span>
+
+        <div class="top-links">
+            <a href="#main">Skip to Main Content</a>
+            <a href="https://psc.wb.gov.in/" target="_blank">Official Website</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================================================
+     HEADER
+     ====================================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <div class="logo">
+            PSC<br>
+            WEST<br>
+            BENGAL
+        </div>
+
+        <div class="title-area">
+            <h1>Public Service Commission, West Bengal</h1>
+            <p>West Bengal Public Service Commission</p>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ======================================================
+     NAVIGATION
+     ====================================================== -->
+
+<nav class="navbar">
+
+    <div class="nav-inner">
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="https://psc.wb.gov.in/" target="_blank">
+                Home
+            </a>
+
+            <a href="#about">
+                About PSC
+            </a>
+
+            <a href="#examination">
+                Examination
+            </a>
+
+            <a href="https://psc.wb.gov.in/whats_new.jsp" target="_blank">
+                What's New
+            </a>
+
+            <a href="#candidate">
+                Candidate's Corner
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ======================================================
+     NOTICE
+     ====================================================== -->
+
+<div class="notice-bar">
+
+    <div class="notice-inner">
+
+        <div class="notice-label">
+            NOTICE
+        </div>
+
+        <div class="notice-text">
+            <span>
+                Visit the official PSC West Bengal website for the latest
+                recruitment notices, examination schedules, results and
+                candidate services.
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<main id="main">
+
+<div class="container">
+
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+
+<section class="hero">
+
+    <div class="hero-card">
+
+        <div class="hero-content">
+
+            <small>
+                PUBLIC SERVICE COMMISSION, WEST BENGAL
+            </small>
+
+            <h2>
+                Recruitment & Examination Information
+            </h2>
+
+            <p>
+                Access examination notifications, applications,
+                admit cards, call letters, syllabus, answer keys,
+                results and other candidate services.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    class="btn btn-primary"
+                    href="https://psc.wb.gov.in/"
+                    target="_blank">
+                    Visit Official Website
+                </a>
+
+                <a
+                    class="btn btn-light"
+                    href="https://psc.wb.gov.in/whats_new.jsp"
+                    target="_blank">
+                    Latest Updates
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SEARCH
+     ====================================================== -->
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Search</h2>
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search this page...">
+
+        <button onclick="searchPage()">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     LATEST NEWS + WHAT'S NEW
+     ====================================================== -->
+
+<section class="section">
+
+    <div class="grid">
+
+
+        <!-- Latest News -->
+
+        <div class="card">
+
+            <div class="card-header">
+                Latest News
+            </div>
+
+            <div class="card-body">
+
+                <ul class="news-list">
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Result announcements and examination updates
+                        </a>
+                        <span class="new">NEW</span>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Personality Test related announcements
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Recruitment and examination notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Important candidate announcements
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- What's New -->
+
+        <div class="card">
+
+            <div class="card-header">
+                What's New
+            </div>
+
+            <div class="card-body">
+
+                <ul class="news-list">
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/whats_new.jsp"
+                           target="_blank">
+                            Latest Notification / Announcement
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/whats_new.jsp"
+                           target="_blank">
+                            Recruitment advertisements
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/whats_new.jsp"
+                           target="_blank">
+                            Admit Card announcements
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/whats_new.jsp"
+                           target="_blank">
+                            Answer keys and examination notices
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Important -->
+
+        <div class="card">
+
+            <div class="card-header">
+                Important Links
+            </div>
+
+            <div class="card-body">
+
+                <ul class="news-list">
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Official PSC Website
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/whats_new.jsp"
+                           target="_blank">
+                            Notifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Examination Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://psc.wb.gov.in/"
+                           target="_blank">
+                            Results
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CANDIDATE'S CORNER
+     ====================================================== -->
+
+<section class="section" id="candidate">
+
+    <div class="section-title">
+
+        <h2>Candidate's Corner</h2>
+
+        <a
+            class="view-all"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Official Website →
+        </a>
+
+    </div>
+
+
+    <div class="candidate-grid">
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/candidateOTRegistration.jsp"
+            target="_blank">
+
+            <div class="service-icon">📝</div>
+
+            <strong>
+                One Time Registration
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">🔐</div>
+
+            <strong>
+                Candidate Login
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">🎫</div>
+
+            <strong>
+                Download Admit Card
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">📄</div>
+
+            <strong>
+                Download Call Letter
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">📤</div>
+
+            <strong>
+                Documents Upload
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">📋</div>
+
+            <strong>
+                Current Applications
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">🔑</div>
+
+            <strong>
+                Answer Key / Response
+            </strong>
+
+        </a>
+
+
+        <a
+            class="service"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+
+            <div class="service-icon">❓</div>
+
+            <strong>
+                FAQs
+            </strong>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     EXAMINATION
+     ====================================================== -->
+
+<section class="section" id="examination">
+
+    <div class="section-title">
+        <h2>Examination</h2>
+    </div>
+
+    <div class="quick-grid">
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Examination Schedule
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Written Test
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Interview / PT
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Syllabus
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Previous Question Papers
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Answer Key
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Results
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Marks
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Unsuitable Candidates
+        </a>
+
+        <a
+            class="quick"
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Debarred Candidates
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT
+     ====================================================== -->
+
+<section class="section" id="about">
+
+    <div class="section-title">
+        <h2>About the Commission</h2>
+    </div>
+
+    <div class="important">
+
+        <p>
+            The West Bengal Public Service Commission conducts
+            recruitment examinations and selection processes for
+            various posts and services under the Government of
+            West Bengal.
+        </p>
+
+        <br>
+
+        <a
+            href="https://psc.wb.gov.in/"
+            target="_blank">
+            Visit the official PSC website for authoritative information →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CURRENT INFORMATION
+     ====================================================== -->
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Current Information</h2>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="card-header">
+                Notifications
+            </div>
+
+            <div class="card-body">
+
+                <p>
+                    Recruitment advertisements,
+                    announcements, corrigenda and other
+                    official notices.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn btn-primary"
+                    href="https://psc.wb.gov.in/notification_announcement.jsp"
+                    target="_blank">
+                    View Notifications
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-header">
+                What's New
+            </div>
+
+            <div class="card-body">
+
+                <p>
+                    View recent examination and recruitment
+                    updates published by the Commission.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn btn-primary"
+                    href="https://psc.wb.gov.in/whats_new.jsp"
+                    target="_blank">
+                    View What's New
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-header">
+                Candidate Services
+            </div>
+
+            <div class="card-body">
+
+                <p>
+                    Access registration and other
+                    candidate-related services.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn btn-primary"
+                    href="https://psc.wb.gov.in/"
+                    target="_blank">
+                    Open Candidate Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     DISCLAIMER
+     ====================================================== -->
+
+<section class="section">
+
+    <div class="important">
+
+        <strong>
+            Important:
+        </strong>
+
+        This page is a mobile-friendly frontend/demo inspired
+        by the structure of the official PSC West Bengal website.
+        For recruitment dates, eligibility, applications,
+        admit cards, results and other authoritative information,
+        always verify the information on the official PSC website.
+
+    </div>
+
+</section>
+
+
+</div>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+
+<footer class="footer" id="contact">
+
+    <div class="footer-main">
+
+
+        <div>
+
+            <h3>
+                Public Service Commission, West Bengal
+            </h3>
+
+            <p>
+                Government of West Bengal
+            </p>
+
+            <br>
+
+            <p>
+                Content related to recruitment and examinations
+                should be verified from the official Commission
+                website before taking any action.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/"
+                        target="_blank">
+                        Official Website
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/whats_new.jsp"
+                        target="_blank">
+                        What's New
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/notification_announcement.jsp"
+                        target="_blank">
+                        Notifications
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/candidateOTRegistration.jsp"
+                        target="_blank">
+                        One Time Registration
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Candidate
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#candidate">
+                        Candidate's Corner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#examination">
+                        Examination
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/"
+                        target="_blank">
+                        Admit Card
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://psc.wb.gov.in/"
+                        target="_blank">
+                        Results
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        Content Owned by Public Service Commission,
+        West Bengal, India.
+
+        <br>
+
+        © <span id="year"></span>
+        Public Service Commission, West Bengal.
+
+        <br><br>
+
+        Demo / frontend implementation — not the official website.
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     BACK TO TOP
+     ====================================================== -->
+
+<button
+    id="topBtn"
+    onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Back to top">
+    ↑
+</button>
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuBtn.innerHTML = "✕";
+        menuBtn.setAttribute("aria-label","Close navigation menu");
+    }else{
+        menuBtn.innerHTML = "☰";
+        menuBtn.setAttribute("aria-label","Open navigation menu");
+    }
+
+});
+
+
+/* Close mobile menu after clicking a link */
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        navLinks.classList.remove("active");
+
+        menuBtn.innerHTML = "☰";
+
+    });
+
+});
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll",function(){
+
+    if(window.scrollY > 400){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+
+});
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+function searchPage(){
+
+    const input =
+        document.getElementById("searchInput").value
+        .trim()
+        .toLowerCase();
+
+    if(!input){
+        alert("Please enter something to search.");
+        return;
+    }
+
+    const elements =
+        document.querySelectorAll(
+            "main h1, main h2, main h3, main p, main li, main a"
+        );
+
+    let found = false;
+
+    elements.forEach(function(element){
+
+        const text =
+            element.textContent.toLowerCase();
+
+        if(!found && text.includes(input)){
+
+            element.scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
+
+            element.style.backgroundColor = "#fff0b3";
+
+            setTimeout(function(){
+                element.style.backgroundColor = "";
+            },2500);
+
+            found = true;
+        }
+
+    });
+
+    if(!found){
+
+        alert(
+            "No matching content was found on this page."
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   ENTER KEY SEARCH
+   ========================================================= */
+
+document
+.getElementById("searchInput")
+.addEventListener("keydown",function(event){
+
+    if(event.key === "Enter"){
+        searchPage();
+    }
+
+});
+
+
+/* =========================================================
+   CURRENT YEAR
+   ========================================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
+```
